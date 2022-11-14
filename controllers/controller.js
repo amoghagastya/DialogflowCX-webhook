@@ -93,10 +93,10 @@ const queryDisorder = async (ans) => {
 async function query_sentiment(data) {
   try {
     const response = await axios.post(
-      "https://api-inference.huggingface.co/models/Infiheal/sentiment_model",
+      "https://api-inference.huggingface.co/models/",
       data,
       {
-        headers: { Authorization: "Bearer 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", 'content-type': 'text/json' }
+        headers: { Authorization: "Bearer ", 'content-type': 'text/json' }
       }
     );
     const result = await response.data;
@@ -115,10 +115,10 @@ async function query_sentiment(data) {
 async function query_bioenergy(data) {
     // try {
       const response = await axios.post(
-        "https://api-inference.huggingface.co/models/Infiheal/bioenergy_model",
+        "https://api-inference.huggingface.co/models/l",
         data,
         {
-          headers: { Authorization: "Bearer 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", 'content-type': 'text/json' }
+          headers: { Authorization: "Bearer ", 'content-type': 'text/json' }
         }
       );
       const result = await response.data;
@@ -133,10 +133,10 @@ async function query_bioenergy(data) {
 async function query_disorder(data) {
     try {
       const response = await axios.post(
-        "https://api-inference.huggingface.co/models/Infiheal/disorder_model",
+        "https://api-inference.huggingface.co/models/",
         data,
         {
-          headers: { Authorization: "Bearer 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", 'content-type': 'text/json' }
+          headers: { Authorization: "Bearer ", 'content-type': 'text/json' }
         }
       );
       const result = await response.data;
@@ -167,10 +167,10 @@ async function query_fear(data) {
 async function query_trauma(data) {
     try {
       const response = await axios.post(
-        "https://api-inference.huggingface.co/models/Infiheal/trauma_model",
+        "https://api-inference.huggingface.co/models/",
         data,
         {
-          headers: { Authorization: "Bearer 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", 'content-type': 'text/json' }
+          headers: { Authorization: "Bearer ", 'content-type': 'text/json' }
         }
       );
       const result = await response.data;
